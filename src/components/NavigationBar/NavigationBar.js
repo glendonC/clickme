@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Routes } from 'react-router-dom';
 import "./NavigationBar.css"
-
+import * as CONST_ROUTES from '../../routing_constants/routes'
 const NavigationBar = () => {
     return (
       <header className="NavigationBar">
         <nav>
           <ul>
-            <Link to="/">Home</Link> |{" "} 
-            <Link to="/profile">Profile</Link>
+            <Link to={CONST_ROUTES.HOME}>Home</Link> |{" "} 
+            <Link to={CONST_ROUTES.SIGN_UP}>Sign Up</Link>
           </ul>
         </nav>
       </header>
